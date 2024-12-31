@@ -9,7 +9,7 @@ void calcfact() {
 
     int fact = 1;
     for (int i = 1; i <= num; i++) {
-        fact *= i;
+        fact = fact * i;
     }
     printf("The factorial of the number is: %d\n", fact);
 }
