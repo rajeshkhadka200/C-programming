@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+  // WAP to add the diagonal elements of an array.
+  
+  int matrix [3][3],i,j, sum=0;
+  
+  // input the matrix
+  for (i=0; i<3; i++){
+      for(j=0; j<3; j++){
+          printf("Enter the value ( %d, %d ) of matrix : ", i+1,j+1);
+          scanf("%d", &matrix[i][j]);
+      }
+  }
+  
+  // process the matrix
+  
+    for (i=0; i<3; i++){
+      for(j=0; j<3; j++){
+          if(i == j){
+              sum = sum+ matrix[i][j];
+          }
+      }
+  }
+  
+  // display the sum
+  printf("The sum of the diagnol elem is %d", sum);
+  
+  return 0;
+}
